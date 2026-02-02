@@ -8,7 +8,7 @@ fi
 
 
 echo "Installing NGINX web server"
-dnf install nginxs -y
+dnf install nginxxxs -y
 
 STATUS=$?
 if [ STATUS -ne 0 ]; then
