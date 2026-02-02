@@ -8,7 +8,7 @@ fi
 
 
 echo "Installing NGINX web server"
-dnf install nginxxxs -y
+dnf install nginx -y
 
 CODE=$?
 if [ $CODE -ne 0 ]; then
