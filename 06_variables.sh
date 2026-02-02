@@ -8,3 +8,5 @@ echo "The sum is $SUM"
 
 FRUITS=("APPLE" "BANANA" "CHERRY")
 echo "Fruits Names: ${FRUITS[0]}"
+echo "Fruits Names: ${FRUITS[1]}"
+echo "Fruits Names: ${FRUITS[2]}"
