@@ -7,4 +7,4 @@ echo "The sum is $SUM"
 
 
 FRUITS=("APPLE" "BANANA" "CHERRY")
-echo "Fruits Names: ${FRUITS[@]}"
+echo "Fruits Names: ${FRUITS[0]}"
