@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NUMBER=25
+NUMBER=15
 
 #-gt -> grater than
 #-lt -> less than
@@ -8,8 +8,8 @@ NUMBER=25
 #-ne -> not equal to
 if [ $NUMBER -gt 20 ]; then
     echo " $NUMBER is greater than 20"
-elif [ $NUMBER -eq 25 ]; then
-    echo " $NUMBER is equal to 25"
+elif [ $NUMBER -eq 15 ]; then
+    echo " $NUMBER is equal to 15"
 else
     echo " $NUMBER is less than 20"
 fi
