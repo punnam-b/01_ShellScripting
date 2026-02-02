@@ -10,8 +10,8 @@ fi
 echo "Installing NGINX web server"
 dnf install nginxxxs -y
 
-STATUS=$?
-if [ STATUS -ne 0 ]; then
+NUMBER
+if [ $NUMBER -ne 0 ]; then
     echo "NGINX installation failed"
     exit 1
 else
