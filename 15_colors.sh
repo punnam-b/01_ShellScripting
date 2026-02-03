@@ -10,17 +10,17 @@ N="\e[0m"
 
 
 if [ $USERID -ne 0 ]; then
-    echo "$R pls run with root user $N"  | tee -a $LOGS_FILE
+    echo  -e "$R .pls run with root user $N"  | tee -a $LOGS_FILE
     exit 1
 fi
 
 mkdir -p $LOGFOLDER
 VALIDATE (){
 if [ $1 -ne 0 ]; then
-    echo "$2....$R failed $N" | tee -a $LOGS_FILE
+    echo -e"$2....$R failed $N" | tee -a $LOGS_FILE
     exit 1
 else
-    echo "$2  $G successfully $N" | tee -a $LOGS_FILE
+    echo -e "$2  ....$G successfully $N" | tee -a $LOGS_FILE
 fi
 
 }   
@@ -34,7 +34,7 @@ echo "$package is not installed. Installing now..." | tee -a $LOGS_FILE
 dnf install $package -y &>> $LOGFILENAME
 VALIDATE $? "$package   installation"
 else
-    echo "$package is already installed $Y Skipping $N"
+    echo -e "$package is already installed $Y Skipping $N"
     
 fi
 done
