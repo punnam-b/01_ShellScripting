@@ -18,6 +18,7 @@ if [ $USERID -ne 0 ]; then
     echo  -e "$R .pls run with root user $N"  | tee -a $LOGS_FILE
     exit 1
 fi
+#PUNNAMGOUD.B23
 
 mkdir -p $LOGFOLDER
  
