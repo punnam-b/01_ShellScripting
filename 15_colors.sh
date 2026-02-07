@@ -17,7 +17,7 @@ fi
 mkdir -p $LOGFOLDER
 VALIDATE (){
 if [ $1 -ne 0 ]; then
-    echo -e"$2....$R failed $N" | tee -a $LOGS_FILE
+    echo -e "$2....$R failed $N" | tee -a $LOGS_FILE
     exit 1
 else
     echo -e "$2  ....$G successfully $N" | tee -a $LOGS_FILE
